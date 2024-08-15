@@ -38,7 +38,6 @@
               <p style="font-size: 14px">Home</p>
             </span>
             <span
-              class="onClick"
               style="
                 display: flex;
                 flex-direction: row;
@@ -63,6 +62,7 @@
               <p style="font-size: 14px">Order</p>
             </span>
             <span
+              class="onClick"
               style="
                 display: flex;
                 flex-direction: row;
@@ -118,80 +118,69 @@
           </div>
         </div>
       </section>
-      <section class="events">
-        <div style="margin: 32px;">
-          <div class="events-get">
-            <h2>Events</h2>
-            <p>Get a quick overview of all your running events</p>
-          </div>
-          <div class="search-go">
-            <div class="input-icon">
-              <input type="text" placeholder="Search events" name="" id="" />
-              <img src="../assets/search-normal.svg" alt="" />
-            </div>
-            <span class="go-to-shop">Go to shop</span>
-          </div>
-          <hr class="events-hr" />
-          <table class="reusable-table">
-            <tr>
-              <td>Event</td>
-              <td>Net sales</td>
-              <td>Items bought</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th>Ubong weds Ogheneruna</th>
-              <th>₦4,500.00</th>
-              <th>3</th>
-              <th><img src="../assets/more_horizontal.svg" alt=""></th>
-            </tr>
-            <tr>
-              <th>Ubong weds Ogheneruna</th>
-              <th>₦4,500.00</th>
-              <th>3</th>
-              <th><img src="../assets/more_horizontal.svg" alt=""></th>
-            </tr>
-            <tr>
-              <th>Ubong weds Ogheneruna</th>
-              <th>₦4,500.00</th>
-              <th>3</th>
-              <th><img src="../assets/more_horizontal.svg" alt=""></th>
-            </tr>
+      <section class="wallet">
+        <div style="margin: 32px">
+          <div
+          class="wallet-settings-flex"
             
-          </table>
-          
+          >
+            <span style="display: flex; flex-direction: column; gap: 8px">
+              <h2>Wallet</h2>
+              <p style="color: #6b6c7e;">Easily manage and withdraw your earnings from your wallet</p>
+            </span>
+            <div class="settings-withdraw">
+              <div class="date-download-utility">
+                <span><img src="../assets/setting-2.png" alt="" /></span>
+                <p style="font-size: 14px">Settings</p>
+              </div>
+              <span
+                style="
+                  border-radius: 12px;
+                  border: 1px solid #555a57;
+                  background: linear-gradient(
+                      180deg,
+                      rgba(255, 255, 255, 0.1) 0%,
+                      rgba(165, 238, 238, 0) 100%
+                    ),
+                    #1e2320;
+                  box-shadow: 0px 0px 0px 1px #1e2320;
+                  display: flex;
+                  padding: 8px 16px;
+                  align-items: center;
+                  color: white;
+                "
+              >
+                <p>Withdraw</p></span
+              >
+            </div>
+          </div>
+          <div class="amount-total">
+            <span class="amount-available">
+              <p style="font-size: 14px">Amount available</p>
+              <h3 style="font-size: 32px">₦0.00</h3>
+            </span>
+            <span
+              class="total-withdrawn"
+            >
+              <p style="font-size: 14px">Total withdrawn</p>
+              <h3 style="font-size: 32px">₦0.00</h3>
+            </span>
+          </div>
+          <hr class="hr-line" /> 
+          <h3>Recent payments</h3>
+          <div class="illustration-texts">
+            <div style="width: 50%;">
+              <img
+                style="width: 152px; height: 118px;margin-bottom: 16px;"
+                src="../assets/sm.png"
+                alt=""
+              />
+              <h4 style="width: 100%;">No orders yet</h4>
+              <p style="margin-top: 4px;margin-bottom: 24px;color: #6b6c7e">
+                All withdrawals made will be found here. 
+              </p>
+            </div>
         </div>
-        <div id="history">
-            <div class="recently-paid">
-                <span class="recently-paid-name">
-                    <p style="font-size: 14px;">Ubong weds Ogheneruna</p>
-                    <span id="details">₦4,500.00 <span class="dot"></span>3</span>
-                </span>
-                <p style="font-size: 14px;"><img src="../assets/more_horizontal.svg" alt=""></p>
-            </div>
-            <div class="recently-paid">
-                <span class="recently-paid-name">
-                    <p style="font-size: 14px;">Ubong weds Ogheneruna</p>
-                    <span id="details">₦4,500.00  <span class="dot"></span>3</span>
-                </span>
-                <p style="font-size: 14px;"><img src="../assets/more_horizontal.svg" alt=""> </p>
-            </div>     
-            <div class="recently-paid">
-                <span class="recently-paid-name">
-                    <p style="font-size: 14px;">Ubong weds Ogheneruna</p>
-                    <span id="details">₦4,500.00 <span class="dot"></span>3</span>
-                </span>
-                <p style="font-size: 14px;"><img src="../assets/more_horizontal.svg" alt=""></p>
-            </div>
-            <div class="recently-paid">
-                <span class="recently-paid-name">
-                    <p style="font-size: 14px;">Ubong weds Ogheneruna</p>
-                    <span id="details">₦4,500.00  <span class="dot"></span>3</span>
-                </span>
-                <p style="font-size: 14px;"><img src="../assets/more_horizontal.svg" alt=""> </p>
-            </div>   
-
-            </div>
       </section>
     </div>
   </body>

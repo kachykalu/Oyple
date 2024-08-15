@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oyple</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          style="width: 72px; height: 24.988px"
+          src="../assets/Logo-white.png"
+          alt=""
+        />
+
+        <img src="../assets/menu.svg" alt="" />
+      </header>
+      <section class="navBar">
+        <div>
+          <img
+            style="margin-left: 27px; margin-top: 34.5px"
+            src="../assets/Logo-white.png"
+          />
+          <div>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+                margin-top: 18.57px;
+              "
+            >
+              <img src="../assets/home-2.svg" alt="" />
+              <p style="font-size: 14px">Home</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/calendar-tick.svg" alt="" />
+              <p style="font-size: 14px">My events</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/note.svg" alt="" />
+              <p style="font-size: 14px">Order</p>
+            </span>
+            <span
+              class="onClick"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/wallet-2.svg" alt="" />
+              <p style="font-size: 14px">Wallet</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/setting-2.svg" alt="" />
+              <p style="font-size: 14px">Settings</p>
+            </span>
+          </div>
+        </div>
+        <div style="margin-bottom: 24px">
+          <div
+            style="display: flex; justify-content: space-between; padding: 12px"
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+              "
+            >
+              <img
+                class="profileAvatar"
+                src="../assets/Avatar.png"
+                style="width: 32px; height: 32px"
+                alt=""
+              />
+              <span
+                class="username-email"
+                style="display: flex; flex-direction: column"
+              >
+                <p style="font-size: 14px">Olivia Rhye</p>
+                <p style="font-size: 12px">oli@gmail.com.com</p>
+              </span>
+            </div>
+            <img class="logout1" src="../assets/logout.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="wallet">
+        <div style="margin: 32px">
+          <div class="wallet-settings-flex">
+            <span style="display: flex; flex-direction: column; gap: 8px">
+              <h2>Wallet</h2>
+              <p style="color: #6b6c7e">
+                Easily manage and withdraw your earnings from your wallet
+              </p>
+            </span>
+            <div class="settings-withdraw">
+              <div class="date-download-utility">
+                <span><img src="../assets/setting-2.png" alt="" /></span>
+                <p style="font-size: 14px">Settings</p>
+              </div>
+              <span
+                style="
+                  border-radius: 12px;
+                  border: 1px solid #555a57;
+                  background: linear-gradient(
+                      180deg,
+                      rgba(255, 255, 255, 0.1) 0%,
+                      rgba(165, 238, 238, 0) 100%
+                    ),
+                    #1e2320;
+                  box-shadow: 0px 0px 0px 1px #1e2320;
+                  display: flex;
+                  padding: 8px 16px;
+                  align-items: center;
+                  color: white;
+                "
+              >
+                <p>Withdraw</p></span
+              >
+            </div>
+          </div>
+          <div class="amount-total">
+            <span class="amount-available">
+              <p style="font-size: 14px">Amount available</p>
+              <h3 style="font-size: 32px">₦47,000.00</h3>
+            </span>
+            <span class="total-withdrawn">
+              <p style="font-size: 14px">Total withdrawn</p>
+              <h3 style="font-size: 32px">₦47,000.00</h3>
+            </span>
+          </div>
+          <hr class="hr-line" />
+          <h3>Recent payments</h3>
+          <table class="reusable-table">
+            <tr>
+              <td>Order</td>
+              <td>Amount</td>
+              <td>Date</td>
+              <td>Status</td>
+            </tr>
+            <tr>
+              <th>0034</th>
+              <th>₦4,500.00</th>
+              <th>1/11/24</th>
+              <th>
+                <span class="check-green"
+                  ><img src="../assets/check.svg" alt="" />
+                  <p style="font-size: 12px">Successful</p></span
+                >
+              </th>
+            </tr>
+            <tr>
+              <th>0034</th>
+              <th>₦4,500.00</th>
+              <th>1/11/24</th>
+              <th>
+                <span class="check-green"
+                  ><img src="../assets/check.svg" alt="" />
+                  <p style="font-size: 12px">Successful</p></span
+                >
+              </th>
+            </tr>
+            <tr>
+              <th>0034</th>
+              <th>₦4,500.00</th>
+              <th>1/11/24</th>
+              <th>
+                <span class="check-red"
+                  ><img src="../assets/x.svg" alt="" />
+                  <p style="font-size: 12px">Cancelled</p></span
+                >
+              </th>
+            </tr>
+            <tr>
+              <th>0034</th>
+              <th>₦4,500.00</th>
+              <th>1/11/24</th>
+              <th>
+                <span class="check-green"
+                  ><img src="../assets/check.svg" alt="" />
+                  <p style="font-size: 12px">Successful</p></span
+                >
+              </th>
+            </tr>
+            <tr>
+              <th>0034</th>
+              <th>₦4,500.00</th>
+              <th>1/11/24</th>
+              <th>
+                <span class="check-green"
+                  ><img src="../assets/check.svg" alt="" />
+                  <p style="font-size: 12px">Successful</p></span
+                >
+              </th>
+            </tr>
+            <tr>
+              <th>0034</th>
+              <th>₦4,500.00</th>
+              <th>1/11/24</th>
+              <th>
+                <span class="check-green"
+                  ><img src="../assets/check.svg" alt="" />
+                  <p style="font-size: 12px">Successful</p></span
+                >
+              </th>
+            </tr>
+            <tr>
+              <th>0034</th>
+              <th>₦4,500.00</th>
+              <th>1/11/24</th>
+              <th>
+                <span class="check-red"
+                  ><img src="../assets/x.svg" alt="" />
+                  <p style="font-size: 12px">Cancelled</p></span
+                >
+              </th>
+            </tr>
+          </table>
+        </div>
+        <div id="history">
+          <div class="withdrawal-status">
+            <span class="recently-paid-name">
+              <p style="font-size: 14px">Withdrawal</p>
+              <span id="details"
+                >0034 <span class="dot"></span>25/07/24, 10:35:56</span
+              >
+            </span>
+            <span class="check-number">
+              <span class="check-green"
+                ><img src="../assets/check.svg" alt="" />
+                <p style="font-size: 12px">Successful</p></span
+              >
+              <p style="font-size: 14px">₦4,500.00</p>
+            </span>
+          </div>
+          <div class="withdrawal-status">
+            <span class="recently-paid-name">
+              <p style="font-size: 14px">Withdrawal</p>
+              <span id="details"
+                >0034 <span class="dot"></span>25/07/24, 10:35:56</span
+              >
+            </span>
+            <span class="check-number">
+              <span class="check-green"
+                ><img src="../assets/check.svg" alt="" />
+                <p style="font-size: 12px">Successful</p></span
+              >
+              <p style="font-size: 14px">₦4,500.00</p>
+            </span>
+          </div>
+          <div class="withdrawal-status">
+            <span class="recently-paid-name">
+              <p style="font-size: 14px">Withdrawal</p>
+              <span id="details"
+                >0034 <span class="dot"></span>25/07/24, 10:35:56</span
+              >
+            </span>
+            <span class="check-number">
+              <span class="check-green"
+                ><img src="../assets/check.svg" alt="" />
+                <p style="font-size: 12px">Successful</p></span
+              >
+              <p style="font-size: 14px">₦4,500.00</p>
+            </span>
+          </div>
+          <div class="withdrawal-status">
+            <span class="recently-paid-name">
+              <p style="font-size: 14px">Withdrawal</p>
+              <span id="details"
+                >0034 <span class="dot"></span>25/07/24, 10:35:56</span
+              >
+            </span>
+            <span class="check-number">
+              <span class="check-green"
+                ><img src="../assets/check.svg" alt="" />
+                <p style="font-size: 12px">Successful</p></span
+              >
+              <p style="font-size: 14px">₦4,500.00</p>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

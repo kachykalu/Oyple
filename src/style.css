@@ -42,13 +42,19 @@ header {
   background-color: #3e423f;
   border-right: 5px solid white;
 }
-#net-items {
+#net-items,
+.amount-total {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-#net-sales {
+.amount-total {
+  margin-bottom: 24px;
+}
+
+#net-sales,
+.amount-available {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -148,8 +154,6 @@ tr:nth-child(even) {
   border: 1px solid var(--greyBlue);
 }
 
-
-
 .dot {
   width: 4px;
   height: 4px;
@@ -165,21 +169,14 @@ tr:nth-child(even) {
   color: var(--lightgray);
 }
 
-.recently-paid-light {
+.recently-paid, .withdrawal-status {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 12px 32px;
 }
-.recently-paid-dark {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 32px;
-  background-color: #f9f9f9;
-}
+
 
 .recently-paid-name {
   display: flex;
@@ -219,7 +216,7 @@ tr:nth-child(even) {
   width: 100%;
   height: 44px;
   border-radius: 12px;
-  background-color:#F9FAFB;
+  background-color: #f9fafb;
   border: 1px solid #e5e7eb;
   font-size: 14px;
 }
@@ -240,9 +237,11 @@ tr:nth-child(even) {
   padding-bottom: 24px;
 }
 
-.events-hr {
+.hr-line {
   border: none;
   border-top: 2px solid #eee;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .illustration-texts {
@@ -275,27 +274,106 @@ tr:nth-child(even) {
 }
 /* Orders screen*/
 
-.orders{
+.orders {
   width: 100%;
 }
 
-.date-download-utility{
+.date-download-utility {
   padding: 12px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
- border: 1px solid #e5e7eb;
- border-radius: 12px;
- color: var(--lightgray);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  color: var(--lightgray);
 }
 
-.utility-flex{
+.utility-flex {
   display: flex;
   justify-content: space-between;
   gap: 16px;
 }
-/* Media queries for dashboardOne*/
+
+.wallet-settings-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/*payouts screens*/
+.wallet {
+  width: 100%;
+}
+
+.settings-withdraw {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.amount-available p,.total-withdrawn p {
+  color: var(--lightgray);
+}
+
+.total-withdrawn {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  border: 1px solid #eee;
+  background: white;
+}
+
+.check-green{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  background-color:#ECFDF3 ;
+  padding: 2px 8px 2px 6px;
+  color: #027A48;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  width: 100px;
+  height: 16px;
+}
+
+.check-red{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  background-color:#FEF3F2;
+  padding: 2px 8px 2px 6px;
+  color: #B42318;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  width: 100px;
+  height: 16px;
+}
+
+.check-number{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: end;
+}
+
+#history div:nth-child(odd){
+  background-color: white;
+  border: 1px solid white;
+}
+#history div:nth-child(even){
+  background-color: var(--greyBlue);
+  border: 1px solid var(--greyBlue);
+}
+
+/* Media queries */
 @media only screen and (max-width: 940px) {
   .profileAvatar {
     width: 8px;
@@ -331,6 +409,15 @@ tr:nth-child(even) {
     flex-direction: column;
     gap: 16px;
   }
+
+  .wallet-settings-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .settings-withdraw {
+    margin-top: 24px;
+  }
 }
 
 @media only screen and (max-width: 665px) {
@@ -359,18 +446,23 @@ tr:nth-child(even) {
   #hello-jane {
     padding-bottom: 121px;
   }
+
+  .amount-total {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-@media only screen and (max-width: 350px){
-  .utility-flex{
+@media only screen and (max-width: 350px) {
+  .utility-flex {
     display: flex;
     flex-direction: column;
     justify-content: left;
   }
 
-  .date-download-utility{
-  display: flex;
-  justify-content: left;
+  .date-download-utility {
+    display: flex;
+    justify-content: left;
   }
 }
 
