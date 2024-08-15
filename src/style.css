@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkBlack: #1e2320;
+  --greyBlue: #f9fafb;
+  --lightgray:#6B6C7E;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  display: none;
+  flex-direction: row;
+  background-color: var(--darkBlack);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 72px;
+}
+#hello-jane {
+  width: 100%;
+}
+
+.navBar {
+  width: 15%;
+  min-width: 236px;
+  height: 985px;
+  background-color: var(--darkBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.home {
+  background-color: #3e423f;
+  border-right: 5px solid white;
+}
+#net-items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#net-sales {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  border: 1px solid #eee;
+  background: white;
+}
+
+#plan-starter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 16px;
+}
+
+#plan-your-attire {
+  display: flex;
+  padding: 24px;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--greyBlue);
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+#go-to-shop {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #555a57;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(165, 238, 238, 0) 100%
+    ),
+    #1e2320;
+  box-shadow: 0px 0px 0px 1px #1e2320;
+  color: white;
+  font-size: 14px;
+}
+
+#starter-checklist {
+  display: flex;
+  padding: 24px 0 24px 24px;
+  width: 75%;
+  flex-direction: column;
+  align-items: left;
+  gap: 16px;
+  background-color: var(--greyBlue);
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+#items-recent {
+  text-align: center;
+  background-color: var(--greyBlue);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 20px 32px 0 32px;
+  border-radius: 12px;
+  border: 1px solid var(--Border-line, #eee);
+  background: #f9fafb;
+}
+#items-recent p {
+  font-size: 14px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: separate;
+  width: 100%;
+  border: 1px solid var(--greyBlue) ;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #6B6C7E;
+  line-height: 20px;
+}
+
+td,
+th {
+  padding: 16px 24px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: var(--greyBlue);
+   border:  1px solid var(--greyBlue);;
+}
+
+
+.dot{
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+#details{
+  display: flex;
+  align-items: center;
+  color: var(--lightgray);
+
+}
+
+.recently-paid-light{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+}
+.recently-paid-dark{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  background-color: #f9f9f9;
+
+}
+
+.recently-paid-name{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#history{
+  display: none;
+}
+
+
+/* Media queries for dashboardOne*/
+@media only screen and (max-width: 940px) {
+  .profileAvatar {
+    width: 8px;
+    height: 12px;
+  }
+
+  .username-email p {
+    font-size: 10px;
+  }
+
+  #plan-starter {
+    display: flex;
+    flex-direction: column;
+  }
+  #plan-your-attire {
+    width: 100%;
+  }
+
+  #starter-checklist {
+    width: 100%;
+  }
+
+  #history{
+    display: block;
+  }
+  table{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  #items-recent p {
+    font-size: 12px;
+  }
+
+  #items-recent {
+    padding: 20px;
+  }
+  #net-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navBar {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+  }
+  #hello-jane {
+    padding-bottom: 121px;
+  }
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oyple</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          style="width: 72px; height: 24.988px"
+          src="../assets/Logo-white.png"
+          alt=""
+        />
+
+        <img src="../assets/menu.svg" alt="" />
+      </header>
+      <section class="navBar">
+        <div>
+          <img style="margin-left: 27px" src="../assets/Logo-white.png" />
+          <div>
+            <span class="home"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+                margin-top: 18.57px;
+              "
+            >
+              <img src="../assets/home-2.svg" alt="" />
+              <p style="font-size: 14px">Home</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/calendar-tick.svg" alt="" />
+              <p style="font-size: 14px">My events</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/note.svg" alt="" />
+              <p style="font-size: 14px">Order</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/wallet-2.svg" alt="" />
+              <p style="font-size: 14px">Wallet</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/setting-2.svg" alt="" />
+              <p style="font-size: 14px">Settings</p>
+            </span>
+          </div>
+        </div>
+        <div style="margin-bottom: 24px">
+          <div
+            style="display: flex; justify-content: space-between; padding: 12px"
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+              "
+            >
+              <img
+                class="profileAvatar"
+                src="../assets/Avatar.png"
+                style="width: 32px; height: 32px"
+                alt=""
+              />
+              <span
+                class="username-email"
+                style="display: flex; flex-direction: column"
+              >
+                <p style="font-size: 14px">Olivia Rhye</p>
+                <p style="font-size: 12px">oli@gmail.com.com</p>
+              </span>
+            </div>
+            <img class="logout1" src="../assets/logout.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="hello-jane">
+      <div
+        style="
+          padding: 32px 32px 25px 32px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          border: 1px solid var(--greyBlue);
+          background-color: var(--greyBlue);
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+          "
+        >
+          <span style="display: flex; flex-direction: column; gap: 8px">
+            <h2>Hello, Jane</h2>
+            <p>Thursday, February 14</p>
+          </span>
+          <span
+            style="
+              border-radius: 12px;
+              border: 1px solid #555a57;
+              background: linear-gradient(
+                  180deg,
+                  rgba(255, 255, 255, 0.1) 0%,
+                  rgba(165, 238, 238, 0) 100%
+                ),
+                #1e2320;
+              box-shadow: 0px 0px 0px 1px #1e2320;
+              display: flex;
+              padding: 8px 16px;
+              align-items: center;
+              color: white;
+            "
+          >
+            <p>Get Started</p></span
+          >
+        </div>
+        <div id="net-items">
+          <span id="net-sales">
+            <p style="font-size: 14px">Net Sales</p>
+            <h3 style="font-size: 32px">₦0.00</h3>
+          </span>
+          <span
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 9px;
+              padding: 16px;
+              border-radius: 12px;
+              width: 100%;
+              border: 1px solid #eee;
+              background: white;
+            "
+          >
+            <p style="font-size: 14px">Items bought</p>
+            <h3 style="font-size: 32px">0</h3>
+          </span>
+        </div>
+        <div style="position: relative">
+          <span
+            style="
+              position: absolute;
+              right: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 8px;
+              color: #5e779d;
+            "
+          >
+            <p style="font-size: 14px">Get paid</p>
+            <img src="../assets/arrow-up.svg" alt="" />
+          </span>
+        </div>
+      </div>
+      <div style="padding: 32px">
+        <div id="plan-starter">
+          <span id="plan-your-attire">
+            <img
+              src="../assets/solar_checklist-minimalistic-bold-duotone.svg"
+              alt=""
+            />
+            <h3 style="font-size: 20px; text-align: center">
+              Plan your attire
+            </h3>
+            <p style="font-size: 14px; text-align: center">
+              Ready to hop right in? Visit the shop to start your fabric
+              selection.
+            </p>
+            <span id="go-to-shop">Go to shop</span>
+          </span>
+          <span id="starter-checklist">
+            <h3 style="font-size: 20px">Starter checklist</h3>
+            <p style="font-size: 14px">
+              Get started by following the checklist below.
+            </p>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                gap: 12px;
+              "
+            >
+              <input type="radio" name="" id="" />
+              <span>
+                <h4>Publish your first event</h4>
+                <p>
+                  Publish your first event and start engaging with your guests.
+                </p>
+              </span>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                gap: 12px;
+              "
+            >
+              <input type="radio" name="" id="" />
+              <span>
+                <h4>Add your bank account</h4>
+                <p>
+                  Securely link your bank account to manage and withdraw your
+                  earning.
+                </p>
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          margin: 40px 32px 20px 32px;
+          justify-content: space-between;
+        "
+      >
+        <p style="font-size: 18px">Recently paid</p>
+        <p style="font-size: 14px">View all</p>
+      </div>
+      <div id="items-recent">
+        <p>Items recently paid for will appear here.</p>
+        <p>You can start by planning your attire or adding your bank account</p>
+      </div>
+    </div>
+  </body>
+</html>
