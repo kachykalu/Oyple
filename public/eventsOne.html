@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../src/style.css">
-</head>
-<body>
-    <section class="navBar">
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <img
+              style="width: 72px; height: 24.988px;"
+              src="../assets/Logo-white.png"
+              alt=""
+            />
+    
+            <img src="../assets/menu.svg" alt="" />
+          </header>
+      <section class="navBar">
         <div>
-          <img style="margin-left: 27px ;margin-top: 34.5px;" src="../assets/Logo-white.png" />
+          <img
+            style="margin-left: 27px; margin-top: 34.5px"
+            src="../assets/Logo-white.png"
+          />
           <div>
-            <span 
+            <span
               style="
                 display: flex;
                 flex-direction: row;
@@ -24,7 +37,8 @@
               <img src="../assets/home-2.svg" alt="" />
               <p style="font-size: 14px">Home</p>
             </span>
-            <span class="onClick"
+            <span
+              class="onClick"
               style="
                 display: flex;
                 flex-direction: row;
@@ -104,6 +118,35 @@
           </div>
         </div>
       </section>
-    
-</body>
+      <section class="events">
+        <div class="events-get">
+          <h2>Events</h2>
+          <p>Get a quick overview of all your running events</p>
+        </div>
+        <div class="search-go">
+            <div class="input-icon">
+          <input type="text" placeholder="Search events" name="" id="" />
+          <img src="../assets/search-normal.svg" alt="">
+        </div>
+          <span class="go-to-shop">Go to shop</span>
+        </div>
+        <hr class="events-hr" />
+        <div class="no-events-yet">
+          <div style="width: 50%;">
+            <img
+              style="width: 152px; height: 118px;margin-bottom: 16px;"
+              src="../assets/sm.png"
+              alt=""
+            />
+            <h4 style="width: 100%;">No events yet</h4>
+            <p style="margin-top: 4px;margin-bottom: 24px;">
+              Visit the fabric shop and start your event creation process. All
+              published events will be displayed here
+            </p>
+            <span class="go-to-shop">Go to shop</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
