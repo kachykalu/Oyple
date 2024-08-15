@@ -14,6 +14,7 @@
   flex-direction: row;
 }
 
+
 header {
   display: none;
   flex-direction: row;
@@ -27,10 +28,14 @@ header {
   width: 100%;
 }
 
+
+.table-wrapper{
+  width: 100%;
+}
 .navBar {
   width: 15%;
   min-width: 236px;
-  height: 985px;
+  height: 897px;
   background-color: var(--darkBlack);
   display: flex;
   flex-direction: column;
@@ -144,7 +149,7 @@ table {
 
 td,
 th {
-  padding: 16px 24px;
+  padding: 16px 8px;
   text-align: center;
   text-align: left;
 }
@@ -374,7 +379,7 @@ tr:nth-child(even) {
 }
 
 /* Media queries */
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 900px) {
   .profileAvatar {
     width: 8px;
     height: 12px;
@@ -471,3 +476,4 @@ tr:nth-child(even) {
     width: 325px;
   }
 }
+
