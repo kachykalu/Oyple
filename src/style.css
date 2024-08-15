@@ -140,12 +140,15 @@ td,
 th {
   padding: 16px 24px;
   text-align: center;
+  text-align: left;
 }
 
 tr:nth-child(even) {
   background-color: var(--greyBlue);
   border: 1px solid var(--greyBlue);
 }
+
+
 
 .dot {
   width: 4px;
@@ -193,18 +196,17 @@ tr:nth-child(even) {
   width: 100%;
 }
 .events-get {
-  padding: 32px 32px 0 32px;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-
-.events-get h2{
+.events-get h2 {
   color: var(--darkBlack);
 }
 
-.events-get p{
+.events-get p {
   color: var(--lightgray);
 }
 .input-icon {
@@ -213,36 +215,34 @@ tr:nth-child(even) {
 }
 
 .input-icon input {
-  padding-left: 30px;
+  padding: 12px 12px 12px 36px;
   width: 100%;
   height: 44px;
   border-radius: 12px;
-  background-color: #E5E7EB;
-  border: 1px solid #E5E7EB;
+  background-color: #e5e7eb;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
 }
 
 .input-icon img {
   position: absolute;
-  left: 10px; 
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none; 
+  pointer-events: none;
 }
-
 
 .search-go {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 24px 32px 24px 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .events-hr {
-  margin-left: 32px;
-  margin-right: 32px;
-    border: none;
-    border-top: 2px solid #eee; 
-
+  border: none;
+  border-top: 2px solid #eee;
 }
 
 .no-events-yet {
@@ -251,7 +251,10 @@ tr:nth-child(even) {
   align-items: center;
   margin: 40px 32px;
   text-align: center;
+}
 
+.events-table {
+  margin-top: 24px;
 }
 
 .go-to-shop {
@@ -298,13 +301,11 @@ tr:nth-child(even) {
     display: block;
   }
 
-
-
   table {
     display: none;
   }
 
-  .search-go{
+  .search-go {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -339,9 +340,8 @@ tr:nth-child(even) {
   }
 }
 
-@media only screen and (min-width:941px)
-{
-  .input-icon input{
+@media only screen and (min-width: 941px) {
+  .input-icon input {
     width: 325px;
   }
 }
