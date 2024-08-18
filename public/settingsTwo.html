@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oyple</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          style="width: 72px; height: 24.988px"
+          src="../assets/Logo-white.png"
+          alt=""
+        />
+
+        <img src="../assets/menu.svg" alt="" />
+      </header>
+      <section class="navBar">
+        <div>
+          <img
+            style="margin-left: 27px; margin-top: 34.5px"
+            src="../assets/Logo-white.png"
+          />
+          <div>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+                margin-top: 18.57px;
+              "
+            >
+              <img src="../assets/home-2.svg" alt="" />
+              <p style="font-size: 14px">Home</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/calendar-tick.svg" alt="" />
+              <p style="font-size: 14px">My events</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/note.svg" alt="" />
+              <p style="font-size: 14px">Order</p>
+            </span>
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/wallet-2.svg" alt="" />
+              <p style="font-size: 14px">Wallet</p>
+            </span>
+            <span
+              class="onClick"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 16px;
+                gap: 8px;
+              "
+            >
+              <img src="../assets/setting-2.svg" alt="" />
+              <p style="font-size: 14px">Settings</p>
+            </span>
+          </div>
+        </div>
+        <div style="margin-bottom: 24px">
+          <div
+            style="display: flex; justify-content: space-between; padding: 12px"
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+              "
+            >
+              <img
+                class="profileAvatar"
+                src="../assets/Avatar.png"
+                style="width: 32px; height: 32px"
+                alt=""
+              />
+              <span
+                class="username-email"
+                style="display: flex; flex-direction: column"
+              >
+                <p style="font-size: 14px">Olivia Rhye</p>
+                <p style="font-size: 12px">oli@gmail.com.com</p>
+              </span>
+            </div>
+            <img class="logout1" src="../assets/logout.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="settings">
+        <div style="margin: 32px">
+          <span style="display: flex; flex-direction: column; gap: 8px">
+            <h2>Settings</h2>
+            <p style="color: #6b6c7e">
+              Customize your account settings and manage your preferences with
+              ease.
+            </p>
+          </span>
+          <hr class="hr-line" />
+          <div class="details-password">
+            <span>My details</span>
+          
+            <span>Password</span>
+          </div>
+          <hr style="margin: 0px;padding: 0px;" class="hr-line" />
+          <span style="display: flex; flex-direction: column; gap: 8px">
+            <h2 style="font-size: 18px;margin-top: 24px;line-height: 20px;">Password</h2>
+            <p style="color: #6b6c7e">Please enter your current password to change your password.
+            </p>
+          </span>
+          <hr style="margin-top: 20px" class="hr-line" />
+          <div class="settings-password">
+            <span>Current password</span>
+            <div class="settings-password-input">
+              <input placeholder="Enter your current password" type="password"  />
+            </div>
+          </div>
+          <hr style="margin-top: 20px" class="hr-line" />
+          <div class="settings-password">
+            <span>New password</span>
+            <div class="settings-password-input password-flex">
+              <input placeholder="Enter your new password" type="password" />
+              <p>Your new password must be more than 8 characters.</p>
+            </div>
+          </div>
+          <hr style="margin-top: 20px" class="hr-line" />
+          <div class="settings-password">
+            <span>Confirm new password</span>
+            <div class="settings-password-input">
+              <input placeholder="Confirm your new password" type="password" />
+            </div>
+          </div>
+          <div class="cancel-save">
+            <span class="cancel-settings">Cancel</span>
+            <span class="update-password">Update password</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

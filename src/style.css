@@ -2,8 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
+a {
+  background-color: inherit;
+  color: inherit;
+}
 :root {
   --darkBlack: #1e2320;
   --greyBlue: #f9fafb;
@@ -13,7 +17,6 @@
   display: flex;
   flex-direction: row;
 }
-
 
 header {
   display: none;
@@ -28,8 +31,7 @@ header {
   width: 100%;
 }
 
-
-.table-wrapper{
+.table-wrapper {
   width: 100%;
 }
 .navBar {
@@ -174,14 +176,14 @@ tr:nth-child(even) {
   color: var(--lightgray);
 }
 
-.recently-paid, .withdrawal-status {
+.recently-paid,
+.withdrawal-status {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 12px 32px;
 }
-
 
 .recently-paid-name {
   display: flex;
@@ -244,7 +246,28 @@ tr:nth-child(even) {
 
 .hr-line {
   border: none;
-  border-top: 2px solid #eee;
+  border-top: 1px solid #eee;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.copy-link{
+  width:60%;
+}
+.copy-link input{
+  padding: 6px 6px 7px 13px;
+  background-color: red;
+  height: 48px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  color: #6b6c7e;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -309,7 +332,8 @@ tr:nth-child(even) {
 }
 
 /*payouts screens*/
-.wallet {
+.wallet,
+.settings {
   width: 100%;
 }
 
@@ -319,7 +343,8 @@ tr:nth-child(even) {
   gap: 16px;
 }
 
-.amount-available p,.total-withdrawn p {
+.amount-available p,
+.total-withdrawn p {
   color: var(--lightgray);
 }
 
@@ -334,13 +359,13 @@ tr:nth-child(even) {
   background: white;
 }
 
-.check-green{
+.check-green {
   display: flex;
   flex-direction: row;
   gap: 4px;
-  background-color:#ECFDF3 ;
+  background-color: #ecfdf3;
   padding: 2px 8px 2px 6px;
-  color: #027A48;
+  color: #027a48;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
@@ -348,13 +373,13 @@ tr:nth-child(even) {
   height: 16px;
 }
 
-.check-red{
+.check-red {
   display: flex;
   flex-direction: row;
   gap: 4px;
-  background-color:#FEF3F2;
+  background-color: #fef3f2;
   padding: 2px 8px 2px 6px;
-  color: #B42318;
+  color: #b42318;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
@@ -362,23 +387,469 @@ tr:nth-child(even) {
   height: 16px;
 }
 
-.check-number{
+.check-number {
   display: flex;
   flex-direction: column;
   gap: 8px;
   align-items: end;
 }
 
-#history div:nth-child(odd){
+#history div:nth-child(odd) {
   background-color: white;
   border: 1px solid white;
 }
-#history div:nth-child(even){
+#history div:nth-child(even) {
   background-color: var(--greyBlue);
   border: 1px solid var(--greyBlue);
 }
 
+/*Not important, a mere centralizer*/
+.centralizer {
+  display: grid;
+  height: 100vh;
+}
+
+/*delete event screen*/
+.delete-event {
+  margin: auto;
+  width: 50%;
+  padding: 24px;
+  border-radius: 12px;
+  border-radius: 12px;
+  background: var(--Base-White, #fff);
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+}
+
+.alert-triangle,
+.user-search {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  border: 8px solid rgba(255, 221, 155, 0.29);
+  background: #ffe7ba;
+  margin-bottom: 20px;
+}
+
+.cancel {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 31, 18, 0.08);
+  width: 100%;
+}
+
+.delete {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #ffa0a0;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(165, 238, 238, 0) 100%
+    ),
+    #ff5656;
+  box-shadow: 0px 0px 0px 1px #ff5656;
+}
+
+.cancel-delete-flex {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+/*dropdown*/
+
+.dropdown {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 192px;
+  border: 1px solid black;
+  border-radius: 12px;
+  color: #5e779d;
+  border-radius: 12px;
+  border: 1px solid var(--Border-line, #eee);
+  background: var(--Base-White, #fff);
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+}
+
+.dropdown-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 20px;
+  padding: 16px 16px 10px 16px;
+}
+.selected {
+  background-color: #fff0f0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.dropdown-flex img {
+  width: 16px;
+  height: 16px;
+}
+.withdrawal-available,
+.home-address,
+.document-verification,
+.verify,
+.bank-for-payouts,
+.unger-review {
+  margin: auto;
+  padding: 24px;
+  width: 40%;
+  border-radius: 12px;
+  background: var(--Base-White, #fff);
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+}
+
+.vector-img {
+  text-align: right;
+}
+
+.direct-bank {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.direct-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  height: 42px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.proceed-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: centerx;
+  border: 1px solid #555a57;
+  background-color: #1e2320;
+  color: white;
+  box-shadow: 0px 0px 0px 1px #1e2320;
+  padding: 12px 16px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+
+.loading1,
+.loading2,
+.loading3,
+.loading4 {
+  display: flex;
+  height: 6px;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 100px;
+  background: #efefef;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.loading1 span {
+  width: 25%;
+  height: 8px;
+  background-color: #5e779d;
+  border-radius: 100px;
+}
+
+.loading2 span {
+  width: 50%;
+  height: 8px;
+  background-color: #5e779d;
+  border-radius: 100px;
+}
+
+.loading3 span {
+  width: 75%;
+  height: 8px;
+  background-color: #5e779d;
+  border-radius: 100px;
+}
+
+.loading4 span {
+  width: 100%;
+  height: 8px;
+  background-color: #5e779d;
+  border-radius: 100px;
+}
+.go-back {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.first-last-name,
+.lga-postal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.full-name,
+.gender,
+.d-o-b,
+.address-line,
+.state,
+.postal-code,
+.lga-city,
+.bvn-nin,
+.enter-bvn,
+.account-number,
+.select-bank {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.select-bank {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.address-line {
+  margin-bottom: 16px;
+}
+.lga-postal {
+  margin-top: 16px;
+}
+
+.amount-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 12px;
+}
+
+.full-name input,
+.d-o-b-flex,
+.bvn,
+.nin,
+.address-line input,
+.postal-code input,
+.enter-bvn input,
+.account-number input {
+  height: 42px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 14px;
+  color: #b2b2bc;
+}
+
+.gender-span,
+.state-span,
+.select-bank-span {
+  display: flex;
+  height: 42px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+.d-o-b-flex,
+.bvn,
+.nin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.bvn-nin {
+  display: flex;
+  flex-direction: column;
+}
+
+/*settings screen */
+.details-password {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 17px;
+  color: #5e779d;
+}
+
+.settings-name,
+.settings-email,
+.settings-number,
+.settings-password {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.settings-name span,
+.settings-email span,
+.settings-number span,
+.settings-password span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #344054;
+  display: block;
+  min-width: 280px;
+  height: 30px;
+}
+
+.settings-name-input,
+.settings-email-input,
+.settings-number-input,
+.settings-password-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 24px;
+  width: 50%;
+}
+
+.settings-name-input input {
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  display: flex;
+  width: 50%;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.settings-email-input input,
+.settings-number-input input,
+.settings-password-input input {
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  display: flex;
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.password-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.password-flex p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+.settings-number-input span {
+  display: flex;
+  width: 81px;
+  height: 42px;
+  padding: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 16px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.cancel-save {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.cancel-settings {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 31, 18, 0.08);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.save-settings,
+.update-password {
+  border-radius: 12px;
+  border: 1px solid #555a57;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(165, 238, 238, 0) 100%
+    ),
+    #1e2320;
+  box-shadow: 0px 0px 0px 1px #1e2320;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+}
 /* Media queries */
+
+@media only screen and (max-width: 1280px) {
+  .first-last-name,
+  .lga-postal {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 900px) {
   .profileAvatar {
     width: 8px;
@@ -423,6 +894,28 @@ tr:nth-child(even) {
   .settings-withdraw {
     margin-top: 24px;
   }
+
+  .settings-name,
+  .settings-email,
+  .settings-number {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .settings-name-input,
+  .settings-email-input,
+  .settings-number-input {
+    width: 100%;
+  }
+  .settings-name span,
+.settings-email span,
+.settings-number span,
+.settings-password span{
+  width: 160px;
+}
+.copy-link{
+  width:100%;
+}
 }
 
 @media only screen and (max-width: 665px) {
@@ -456,8 +949,63 @@ tr:nth-child(even) {
     display: flex;
     flex-direction: column;
   }
+
+  .delete-event {
+    width: 80%;
+  }
+
+  .cancel-delete-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .withdrawal-available,
+  .verify,
+  .home-address,
+  .document-verification,
+  .bank-for-payouts,
+  .unger-review {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .document-verification {
+    width: 80%;
+  }
 }
 
+@media only screen and (max-width: 390px) {
+  .withdrawal-available,
+  .verify,
+  .home-address,
+  .document-verification,
+  .bank-for-payouts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .unger-review {
+    width: 90%;
+  }
+
+  .settings-email,
+  .settings-name,
+  .settings-number {
+    display: flex;
+    gap: 16px;
+  }
+
+  .settings-name-input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .settings-name-input input {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 350px) {
   .utility-flex {
     display: flex;
@@ -476,4 +1024,3 @@ tr:nth-child(even) {
     width: 325px;
   }
 }
-
